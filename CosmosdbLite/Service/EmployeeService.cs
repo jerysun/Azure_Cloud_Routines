@@ -24,6 +24,11 @@ namespace CosmosdbLite.Service
             employee1.FirstName = firstname;
             employee1.LastName = lastname;
 
+            if (serviceCosmos.DClient == null)
+            {
+                return false;
+            }
+
             try
             {
                 var result = await serviceCosmos.DClient.CreateDocumentAsync( //http POST action
@@ -49,6 +54,11 @@ namespace CosmosdbLite.Service
             var queryOptions = new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true };
 
             IOrderedQueryable<EmployeeEntity> query = null;
+
+            if (serviceCosmos.DClient == null)
+            {
+                return null;
+            }
 
             try
             {

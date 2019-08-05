@@ -26,7 +26,11 @@ namespace CosmosdbLite
             employeeService.InsertOp("richard", "smith").GetAwaiter().GetResult();
 
             var query = employeeService.QueryOp().GetAwaiter().GetResult();
-            PrintQureyResult(query);
+
+            if (query != null)
+            {
+                PrintQureyResult(query);
+            }
 
             Console.WriteLine("\n\n");
             Console.WriteLine("Press any key to end");
@@ -35,6 +39,11 @@ namespace CosmosdbLite
 
         static void PrintQureyResult(IOrderedQueryable<EmployeeEntity> query)
         {
+            if (query == null)
+            {
+                return;
+            }
+
             Console.WriteLine("Names of all the staff:");
             Console.WriteLine("=======================");
 
