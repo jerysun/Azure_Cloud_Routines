@@ -55,16 +55,11 @@ namespace CosmosdbLite.Service
 
             IOrderedQueryable<EmployeeEntity> query = null;
 
-            if (serviceCosmos.DClient == null)
-            {
-                return null;
-            }
-
             try
             {
                 await Task.Run(() =>
                 {
-                   query = serviceCosmos.DClient.CreateDocumentQuery<EmployeeEntity>(//http GET action
+                   query = serviceCosmos.DClient?.CreateDocumentQuery<EmployeeEntity>(//http GET action
                        UriFactory.CreateDocumentCollectionUri(serviceCosmos.DatabaseName, serviceCosmos.ContainerName),
                        queryOptions
                        ).Where(e => e.LastName == "soprano") as IOrderedQueryable<EmployeeEntity>;
