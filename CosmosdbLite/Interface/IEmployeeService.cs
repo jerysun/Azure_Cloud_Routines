@@ -10,6 +10,6 @@ namespace CosmosdbLite.Interface
     public interface IEmployeeService
     {
         Task<bool> InsertOp(string firstname, string lastname);
-        Task<IOrderedQueryable<EmployeeEntity>> QueryOp();
+        Task<IOrderedQueryable<EmployeeEntity>> QueryOp(string fieldFilter);
     }
 }

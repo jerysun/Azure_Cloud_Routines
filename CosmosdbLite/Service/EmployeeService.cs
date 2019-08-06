@@ -49,7 +49,7 @@ namespace CosmosdbLite.Service
             }
         }
 
-        public async Task<IOrderedQueryable<EmployeeEntity>> QueryOp()
+        public async Task<IOrderedQueryable<EmployeeEntity>> QueryOp(string fieldFilter)
         {
             var queryOptions = new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true };
 
@@ -62,7 +62,7 @@ namespace CosmosdbLite.Service
                    query = serviceCosmos.DClient?.CreateDocumentQuery<EmployeeEntity>(//http GET action
                        UriFactory.CreateDocumentCollectionUri(serviceCosmos.DatabaseName, serviceCosmos.ContainerName),
                        queryOptions
-                       ).Where(e => e.LastName == "soprano") as IOrderedQueryable<EmployeeEntity>;
+                       ).Where(e => e.LastName == fieldFilter) as IOrderedQueryable<EmployeeEntity>;
                 });
 
                 return query;

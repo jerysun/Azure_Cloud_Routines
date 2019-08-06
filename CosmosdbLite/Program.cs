@@ -10,6 +10,7 @@ namespace CosmosdbLite
     {
         private static string DatabaseeName = "maindb";
         private static string ContainerName = "employee";
+        private static string FieldFilter = "soprano";
 
         static void Main(string[] args)
         {
@@ -25,7 +26,7 @@ namespace CosmosdbLite
             employeeService.InsertOp("tony", "soprano").GetAwaiter().GetResult();
             employeeService.InsertOp("richard", "smith").GetAwaiter().GetResult();
 
-            var query = employeeService.QueryOp().GetAwaiter().GetResult();
+            var query = employeeService.QueryOp(FieldFilter).GetAwaiter().GetResult();
 
             if (query != null)
             {
