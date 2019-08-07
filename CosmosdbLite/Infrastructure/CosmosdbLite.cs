@@ -72,13 +72,13 @@ namespace CosmosdbLite
             catch (ConfigurationErrorsException e)
             {
                 Console.WriteLine(e.ToString());
+                return string.Empty;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
+                return string.Empty;
             }
-
-            return string.Empty;
         }
     }
 }
