@@ -14,6 +14,9 @@ namespace CosmosdbLite
         private static CosmosdbLite mInstance;
         private static Object mLock = new object();
 
+        private static string endpoint;
+        private static string key;
+
         public string DatabaseName { get; }
         public string ContainerName { get; }
 
@@ -29,8 +32,8 @@ namespace CosmosdbLite
             DatabaseName = databaseeName;
             ContainerName = containerName;
 
-            string endpoint = GetCosmosDbConfig("endpoint");
-            string key = GetCosmosDbConfig("key");
+            endpoint = GetCosmosDbConfig("endpoint");
+            key = GetCosmosDbConfig("key");
             DClient = new DocumentClient(new Uri(endpoint), key);
         }
 
@@ -62,6 +65,14 @@ namespace CosmosdbLite
 
         private static string GetCosmosDbConfig(string key)
         {
+            if (key.Equals("endpoint") && !string.IsNullOrEmpty(endpoint)) {
+                return endpoint;
+            }
+            else if (key.Equals("key") && !string.IsNullOrEmpty(key))
+            {
+                return key;
+            }
+
             try
             {
                 NameValueCollection appSettings = ConfigurationManager.AppSettings;
