@@ -25,6 +25,30 @@ Points:
 - It shows how to connect to the CosmosDB, insert Non structured data, query them with filters, etc.
 - It also displays how to adopt the best practice of software engineering to do the architecture of a project, and how to use the design patterns such as Singleton, DI(Dependency Injection), etc.
 
+## II. Project MyAzureSQLDatabase
+
+### Azure SQLDatabase
+
+Azure SQL Database is the intelligent, scalable, cloud database service that provides the broadest SQL Server engine compatibility.
+
+Features:
+- Built-in machine learning for peak database performance and durability that optimises performance and security for you
+- Unmatched scale and high availability for compute and storage without sacrificing performance
+- Advanced data security including data discovery and classification, vulnerability assessment and advanced threat detection all in a single pane of glass
+
+### Project Description
+
+To run this app you must create your Azure SQL Database from https://portal.azure.com , however if you just want to read the source codes and learn something, then you don't have to create your SQL Database resource on Microsoft Azure cloud.
+
+Note:
+- If you create your own SQL Database on Azure cloud platform, then please replace the placeholder with your own connection string in App.config file.
+- This project assumes you have created a database and a talbe named "employee" inside it either directly on Azure or via your local MSSMS (Again, it's unnecessary if you don't plan to really run this app).
+
+Points:
+- It shows how to connect to the Azure SQL Database, insert data, asynchronous operation, etc.
+- It also displays how to adopt the best practice of software engineering to do the architecture of a project, and how to use the design patterns such as Bridge, DI(Dependency Injection), etc.
+- It revealss you Azure SQL Database's power of automatic scaling, high availability as well as the data security by creating the firewall whitelist.
+
 Please feel free to ask me if you have any questions.
 
 Have fun,
