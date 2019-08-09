@@ -47,7 +47,7 @@ Note:
 Points:
 - It shows how to connect to the Azure SQL Database, insert data, asynchronous operation, etc.
 - It also displays how to adopt the best practice of software engineering to do the architecture of a project, and how to use the design patterns such as Bridge, DI(Dependency Injection), etc.
-- It revealss you Azure SQL Database's power of automatic scaling, high availability as well as the data security by creating the firewall whitelist.
+- It reveals you Azure SQL Database's power of automatic scaling, high availability as well as the data security by creating the firewall whitelist.
 
 Please feel free to ask me if you have any questions.
 
