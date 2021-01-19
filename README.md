@@ -2,6 +2,11 @@
 
 This is a series that will cover Azure CosmosDB, Azure Service Bus, Azure Storage Account, Azure SQL Database, Azure Blob Containers, Azure Function App, Azure API App, Azure Mobile Apps, Azure App Service, Azure Authentication, etc.
 
+### Catalogue
+1. Azure CosmosDB
+2. Azure SQLDatabase
+3. 
+
 ## I. Project CosmosdbLite
 
 ### Azure CosmosDB
@@ -15,7 +20,7 @@ Features:
 
 ### Project Description
 
-To run this app you must create your Azure CosmosDB from https://portal.azure.com , however if you just want to read the source codes and learn something, then you don't have to create your CosmosDB resource on Microsoft Azure cloud.
+To run this app you must create your Azure CosmosDB on https://portal.azure.com , however if you just want to read the source codes and learn something, then you don't have to create your CosmosDB resource on Microsoft Azure cloud.
 
 Note:
 - If you create your own CosmosDB on Azure cloud platform, then please replace the placeholders with your own endpoint and key in App.config file.
@@ -38,7 +43,7 @@ Features:
 
 ### Project Description
 
-To run this app you must create your Azure SQL Database from https://portal.azure.com , however if you just want to read the source codes and learn something, then you don't have to create your SQL Database resource on Microsoft Azure cloud.
+To run this app you must create your Azure SQL Database on https://portal.azure.com , however if you just want to read the source codes and learn something, then you don't have to create your SQL Database resource on Microsoft Azure cloud.
 
 Note:
 - If you create your own SQL Database on Azure cloud platform, then please replace the placeholder with your own connection string in App.config file.
@@ -48,6 +53,25 @@ Points:
 - It shows how to connect to the Azure SQL Database, insert data, asynchronous operation, etc.
 - It also displays how to adopt the best practice of software engineering to do the architecture of a project, and how to use the design patterns such as Bridge, DI(Dependency Injection), etc.
 - It reveals you Azure SQL Database's power of automatic scaling, high availability as well as the data security by creating the firewall whitelist.
+
+## III. Project ABlobStorage
+
+### Azure Blob Storage
+
+Azure Blob Storage helps you create data lakes for your analytics needs, and provides storage to build powerful cloud-native and mobile apps. Optimize costs with tiered storage for your long-term data, and flexibly scale up for high-performance computing and machine learning workloads.
+
+### Project Description
+
+To run this app you must create your Azure Storage Account on https://portal.azure.com , however if you just want to read the source codes and learn something, then you don't have to create your storage resource on Microsoft Azure cloud.
+
+Note:
+- If you create your own Azure Storage Account, then please replace the placeholder with your own connection string in appsettings.json file.
+- This project assumes you have created a blob container "aexample"
+
+Points:
+- It's a full-fledged Web Api project targeted at Azure Blob Storage based on ASP.NET Core 3.1
+- It shows how to access the containers of Azure Blob Storage as well as how to manipulate the files stored there.
+- It also displays how to adopt the best practice of software engineering to do the architecture of a project, and how to use the design patterns such as Service-Repository, DI(Dependency Injection), etc.
 
 Please feel free to ask me if you have any questions.
 
