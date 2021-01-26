@@ -73,6 +73,25 @@ Points:
 - It shows how to access the containers of Azure Blob Storage as well as how to manipulate the files stored there.
 - It also displays how to adopt the best practice of software engineering to do the architecture of a project, and how to use the design patterns such as Service-Repository, DI(Dependency Injection), etc.
 
+## IV. WebApp AzureServiceBus
+
+Azure Service Bus is a cloud-based messaging service providing queues and topics with publish/subscribe semantics and rich features. Use Service Bus to:
+- Build reliable and elastic cloud apps with messaging.
+- Protect your application from temporary peaks.
+- Distribute messages to multiple independent backend systems.
+- Decouple your applications from each other.
+
+### App Description
+
+It consists of three projects: ASBPublisher, ASBShared, ASBSubscriber.
+
+To run this app you must create your Service Bus resource on https://portal.azure.com , however if you just want to read the source codes and learn something, then you don't have to do it.
+
+Note:
+- If you create your own Service Bus resource, then please replace the placeholder with your own connection string in appsettings.json file of ASBPublisher, and Program.cs of ASBSubscriber.
+- This App assumes you have created a service bus queue "personqueue".
+
+
 Please feel free to ask me if you have any questions.
 
 Have fun,
