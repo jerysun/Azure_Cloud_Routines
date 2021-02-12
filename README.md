@@ -7,6 +7,7 @@ This is a series that will cover Azure CosmosDB, Azure Service Bus, Azure Storag
 2. Azure SQLDatabase
 3. Azure Blob Storage
 4. Azure Service Bus
+5. HangfireDemo
 
 ## I. Project CosmosdbLite
 
@@ -92,6 +93,25 @@ Note:
 - If you create your own Service Bus resource, then please replace the placeholder with your own connection string in appsettings.json file of ASBPublisher, and Program.cs of ASBSubscriber.
 - This App assumes you have created a service bus queue "personqueue".
 
+## V. HangfireDemo
+
+An easy way to perform background processing in .NET and .NET Core applications. No Windows Service or separate process required. Backed by persistent storage. Open and free for commercial use.
+
+Although it doesn't belong to Microsoft Azure cloud, however it's used widely in huge amounts of Azure related projects.
+
+### Project Description
+
+It is a WebAPI scaffold project consisting of four "modules":
+- Fire and Forget Jobs
+- Delayed Jobs
+- Recurring Jobs
+- Continuous Jobs
+
+which can be easily expanded, so that they can be smoothly adapted to the product environment.
+
+Tips:
+- Use POSTMAN to do the tests
+- Use Hangfire dashboard to monitor and managed the background jobs
 
 Please feel free to ask me if you have any questions.
 
