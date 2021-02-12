@@ -111,7 +111,7 @@ which can be easily expanded, so that they can be smoothly adapted to the produc
 
 Tips:
 - Use POSTMAN to do the tests
-- Use Hangfire dashboard to monitor and managed the background jobs
+- Use Hangfire dashboard to monitor and manage the background jobs
 
 Please feel free to ask me if you have any questions.
 
