@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASBShared", "ASBShared\ASBS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASBSubscriber", "ASBSubscriber\ASBSubscriber.csproj", "{970B2238-D850-4EA9-8992-E4C9D00FB2E9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HangfireDemo", "HangfireDemo\HangfireDemo.csproj", "{6D0F9A81-C754-4BE9-8E48-C9C6BB5EAF9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{970B2238-D850-4EA9-8992-E4C9D00FB2E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{970B2238-D850-4EA9-8992-E4C9D00FB2E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{970B2238-D850-4EA9-8992-E4C9D00FB2E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D0F9A81-C754-4BE9-8E48-C9C6BB5EAF9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0F9A81-C754-4BE9-8E48-C9C6BB5EAF9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0F9A81-C754-4BE9-8E48-C9C6BB5EAF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0F9A81-C754-4BE9-8E48-C9C6BB5EAF9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
