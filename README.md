@@ -8,6 +8,7 @@ This is a series that will cover Azure CosmosDB, Azure Service Bus, Azure Storag
 3. Azure Blob Storage
 4. Azure Service Bus
 5. HangfireDemo
+6. Azure Functions
 
 ## I. Project CosmosdbLite
 
@@ -112,6 +113,18 @@ which can be easily expanded, so that they can be smoothly adapted to the produc
 Tips:
 - Use POSTMAN to do the tests
 - Use Hangfire dashboard to monitor and manage the background jobs
+
+## VI. Azure Functions
+
+Azure Functions is a serverless cloud service available on-demand that provides all the continually-updated infrastructure and resources needed to run your applications. You focus on the pieces of code that matter most to you, and Functions handles the rest. It's used widely in building web APIs, responding to database changes, processing IoT streams, managing message queues, and more.
+
+### Projects Description
+
+Under AZFunctions folder there are 3 independent AF projects:
+- FABlobIOBinding: It's a QueueTrigger service using Input and Output two-way bindings.
+- FARescalePics: It's a BlobTrigger service which can be direct put into your production environment. It's an open source online service to rescale pictures.
+- FAStorageQue : It's a HttpTrigger service using Queue output binding.
+
 
 Please feel free to ask me if you have any questions.
 
