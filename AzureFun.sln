@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FARescalePics", "AZFunction
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAStorageQue", "AZFunctions\FAStorageQue\FAStorageQue.csproj", "{491D8748-B3E3-4A56-9DFA-1C4AE97ABDFB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosMVC", "CosmosMVC\CosmosMVC.csproj", "{68B6D5F6-5AA5-4C20-AAC7-80E79957579D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{491D8748-B3E3-4A56-9DFA-1C4AE97ABDFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{491D8748-B3E3-4A56-9DFA-1C4AE97ABDFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{491D8748-B3E3-4A56-9DFA-1C4AE97ABDFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B6D5F6-5AA5-4C20-AAC7-80E79957579D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B6D5F6-5AA5-4C20-AAC7-80E79957579D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B6D5F6-5AA5-4C20-AAC7-80E79957579D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B6D5F6-5AA5-4C20-AAC7-80E79957579D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

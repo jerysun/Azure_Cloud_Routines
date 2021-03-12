@@ -21,16 +21,26 @@ Features:
 2. Session consistency is most widely used consistency level both for single region as well as, globally distributed applications.
 3. One major advantage that Cosmos DB offers over a Storage Account table storage is that Sub 10ms latency is guaranteed.
 
-### Project Description
-
 To run this app you must create your Azure CosmosDB on https://portal.azure.com , however if you just want to read the source codes and learn something, then you don't have to create your CosmosDB resource on Microsoft Azure cloud.
 
-Note:
+### Project CosmosdbLite Description
+
+It's a console app based on .NET Framework 4.7.2. Note:
 - If you create your own CosmosDB on Azure cloud platform, then please replace the placeholders with your own endpoint and key in App.config file.
-- This project assumes you have created an empty Cosmos DB named "maindb" and an empty container named "employee" (Again, it's unnecessary if you don't plan to really run this app).
+- This project assumes you have created an empty Cosmos DB named "maindb" and an empty container named "employee" on Azure portal (Again, it's unnecessary if you don't plan to really run this app).
 
 Points:
 - It shows how to connect to the CosmosDB, insert Non structured data, query them with filters, etc.
+- It also displays how to adopt the best practice of software engineering to do the architecture of a project, and how to use the design patterns such as Singleton, DI(Dependency Injection), etc.
+
+### Project CosmosMVC Description
+
+It's a full-fledged ASP.NET Core 3.1 MVC web app you can deploy on Azure using App Service. Note:
+- If you create your own CosmosDB on Azure cloud platform, then please replace the placeholders with your own account endpoint and key in appsettings.json file.
+- This project assumes you have created an empty Cosmos DB named "Tasks" and an empty container named "Item" on Azure portal (Again, it's unnecessary if you don't plan to really run this app).
+
+Points:
+- It shows how to connect to the CosmosDB, insert Non structured data, query them with filters, update and delete them, etc.
 - It also displays how to adopt the best practice of software engineering to do the architecture of a project, and how to use the design patterns such as Singleton, DI(Dependency Injection), etc.
 
 ## II. Project MyAzureSQLDatabase
