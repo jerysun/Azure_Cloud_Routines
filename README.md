@@ -86,7 +86,12 @@ Points:
 - It shows how to access the containers of Azure Blob Storage as well as how to manipulate the files stored there.
 - It also displays how to adopt the best practice of software engineering to do the architecture of a project, and how to use the design patterns such as Service-Repository, DI(Dependency Injection), etc.
 
+
 ## IV. WebApp AzureServiceBus
+
+To run this app you must create your Service Bus resource on https://portal.azure.com , however if you just want to read the source codes and learn something, then you don't have to do it.
+
+### Example 1
 
 Azure Service Bus is a cloud-based messaging service providing queues and topics with publish/subscribe semantics and rich features. Use Service Bus to:
 - Build reliable and elastic cloud apps with messaging.
@@ -94,15 +99,28 @@ Azure Service Bus is a cloud-based messaging service providing queues and topics
 - Distribute messages to multiple independent backend systems.
 - Decouple your applications from each other.
 
-### App Description
+#### App Description
 
 It consists of three projects: ASBPublisher, ASBShared, ASBSubscriber.
-
-To run this app you must create your Service Bus resource on https://portal.azure.com , however if you just want to read the source codes and learn something, then you don't have to do it.
 
 Note:
 - If you create your own Service Bus resource, then please replace the placeholder with your own connection string in appsettings.json file of ASBPublisher, and Program.cs of ASBSubscriber.
 - This App assumes you have created a service bus queue "personqueue".
+
+### Example 2 - AZSBTopicSubscription
+
+When using topics and subscriptions, components of a distributed application do not communicate directly with each other; instead they exchange messages via a topic, which acts as an intermediary. In contrast with Service Bus queues, in which each message is processed by a single consumer, topics and subscriptions provide a one-to-many form of communication, using a publish/subscribe pattern.
+
+#### App Description
+
+It theoretically consists of two virtual modules:
+- Send messages to a Service Bus topic.
+- Receive messages from a subscription of the topic.
+
+Note:
+- If you create your own Service Bus namespace, then please replace the placeholder with your own connection string in Program.cs.
+- This App assumes you have created a service bus topic "aznewtopic".
+
 
 ## V. HangfireDemo
 
